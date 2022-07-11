@@ -1,4 +1,5 @@
 gitを初めていきます。
 基本的なワークフローを学びます。
 よろしくお願いします。
-iiiiiii
+・git add
+・git commit
