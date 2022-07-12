@@ -3,3 +3,4 @@ gitを初めていきます。
 よろしくお願いします。
 ・git add
 ・git commit
+・git rm
