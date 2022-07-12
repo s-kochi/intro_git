@@ -1,0 +1,20 @@
+version: "3"
+services:
+  db:
+    platform: linux/x86_64
+    image: mysql:5.7
+    container_name: amd-mysql
+    environment:
+      TZ: Asia/Tokyo
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: mysqluser
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: datalake
+    ports:
+      - "13306:3306"
+    volumes:
+      # MySQL設定ファイル
+      - ./db/conf.d:/etc/mysql/conf.d
+      # 永続領域(DBデータ用)
+      - ./db/mysql:/var/lib/mysql
+    
