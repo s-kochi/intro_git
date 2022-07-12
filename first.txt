@@ -5,3 +5,4 @@ gitを初めていきます。
 ・git commit
 ・git rm
 ・git status
+・git diff
